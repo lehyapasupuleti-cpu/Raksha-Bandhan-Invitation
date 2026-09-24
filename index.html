@@ -1,35 +1,1311 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Happy Raksha Bandhan Brother ❤️</title>
+
+<title>Happy Raksha Bandhan ❤️</title>
+
 <style>
-body{margin:0;font-family:Georgia;background:#fff0db;text-align:center;color:#6b1545}
-section{padding:80px 20px;min-height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center}
-h1{font-size:48px;color:#a0205a}
-h2{font-size:32px;color:#d43d7a}
-p{font-size:18px;line-height:1.6;max-width:600px}
-.box{background:white;padding:40px;border-radius:20px;box-shadow:0 5px 20px rgba(0,0,0,0.1);margin:20px}
-a.btn{background:#a0205a;color:white;padding:15px 30px;border-radius:30px;text-decoration:none;display:inline-block;margin-top:20px;font-size:18px}
-.emoji{font-size:70px}
+
+/* =========================
+   RESET
+========================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Georgia,"Times New Roman",serif;
+    background:#fff4e6;
+    color:#5a1745;
+    overflow-x:hidden;
+}
+
+section{
+    min-height:100vh;
+    padding:100px 7%;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    position:relative;
+    overflow:hidden;
+}
+
+h1,h2,h3{
+    font-weight:bold;
+}
+
+.section-title{
+    font-size:clamp(2.2rem,6vw,4.5rem);
+    color:#a52264;
+    margin-bottom:20px;
+}
+
+.subtitle{
+    max-width:850px;
+    font-size:1.2rem;
+    line-height:1.9;
+    margin-bottom:40px;
+}
+
+.gold{
+    color:#d39a20;
+}
+
+/* =========================
+   NAVIGATION
+========================= */
+
+nav{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    z-index:9999;
+    background:rgba(82,12,62,.96);
+    padding:13px 5px;
+    box-shadow:0 3px 20px rgba(0,0,0,.25);
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:22px;
+    flex-wrap:wrap;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    font-family:Arial,sans-serif;
+    font-size:.9rem;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#ffd96a;
+}
+
+/* =========================
+   FLOATING DECORATIONS
+========================= */
+
+.float{
+    position:absolute;
+    font-size:2rem;
+    animation:float 4s ease-in-out infinite;
+    pointer-events:none;
+}
+
+.f1{top:15%;left:5%}
+.f2{top:25%;right:6%;animation-delay:1s}
+.f3{bottom:15%;left:8%;animation-delay:2s}
+.f4{bottom:20%;right:8%;animation-delay:1.5s}
+
+@keyframes float{
+    0%,100%{
+        transform:translateY(0) rotate(0);
+    }
+    50%{
+        transform:translateY(-25px) rotate(8deg);
+    }
+}
+
+/* =========================
+   SECTION 1 HOME
+========================= */
+
+#home{
+    background:
+    radial-gradient(circle at 20% 20%,#ffd98b,transparent 20%),
+    radial-gradient(circle at 80% 70%,#ffb2d3,transparent 25%),
+    linear-gradient(135deg,#69164d,#a92566,#df718c);
+    color:white;
+}
+
+.rakhi{
+    width:180px;
+    height:180px;
+    border-radius:50%;
+    margin-bottom:35px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:6rem;
+    background:radial-gradient(circle,#fff1a6,#d28b13);
+    border:12px solid #fff0b8;
+    box-shadow:0 0 0 15px rgba(255,255,255,.15),
+               0 20px 50px rgba(0,0,0,.3);
+    animation:pulse 3s infinite;
+}
+
+@keyframes pulse{
+    50%{transform:scale(1.08)}
+}
+
+#home h1{
+    font-size:clamp(2.8rem,8vw,6rem);
+    color:#fff0a7;
+    line-height:1.1;
+    text-shadow:3px 5px 12px rgba(0,0,0,.3);
+}
+
+#home h2{
+    margin-top:25px;
+    font-size:clamp(2rem,5vw,3.5rem);
+    color:#ffb7d4;
+}
+
+#home p{
+    max-width:800px;
+    margin:30px auto;
+    font-size:1.25rem;
+    line-height:1.9;
+}
+
+.scroll{
+    margin-top:35px;
+    font-size:1.1rem;
+    animation:bounce 1.8s infinite;
+}
+
+@keyframes bounce{
+    50%{transform:translateY(12px)}
+}
+
+/* =========================
+   SECTION 2 MESSAGE
+========================= */
+
+#message{
+    background:
+    linear-gradient(rgba(255,245,230,.94),rgba(255,245,230,.94)),
+    repeating-linear-gradient(
+        45deg,
+        #e5a4c4 0,
+        #e5a4c4 2px,
+        transparent 2px,
+        transparent 15px
+    );
+}
+
+.message-box{
+    max-width:900px;
+    background:white;
+    padding:55px;
+    border:3px solid #ddb13e;
+    border-radius:30px;
+    box-shadow:0 20px 60px rgba(100,30,70,.18);
+}
+
+.message-box p{
+    font-size:1.25rem;
+    line-height:2;
+    margin-bottom:20px;
+}
+
+/* =========================
+   SECTION 3 MEMORIES
+========================= */
+
+#memories{
+    background:linear-gradient(135deg,#fff0f5,#f9ddc2);
+}
+
+.cards{
+    width:100%;
+    max-width:1100px;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+}
+
+.card{
+    background:white;
+    padding:35px 25px;
+    border-radius:25px;
+    border:2px solid #dfb547;
+    box-shadow:0 15px 30px rgba(90,20,60,.12);
+    transition:.4s;
+}
+
+.card:hover{
+    transform:translateY(-12px);
+}
+
+.card .icon{
+    font-size:3.5rem;
+    margin-bottom:20px;
+}
+
+.card h3{
+    color:#92235c;
+    margin-bottom:15px;
+    font-size:1.4rem;
+}
+
+.card p{
+    line-height:1.8;
+}
+
+/* =========================
+   SECTION 4 SPECIAL BROTHER
+========================= */
+
+#special{
+    background:
+    radial-gradient(circle at top left,#ffd878,transparent 25%),
+    radial-gradient(circle at bottom right,#ff9dc9,transparent 25%),
+    linear-gradient(135deg,#fff4dc,#f7d4e7);
+}
+
+.special-grid{
+    width:100%;
+    max-width:1100px;
+    display:grid;
+    grid-template-columns:repeat(5,1fr);
+    gap:15px;
+}
+
+.special-card{
+    background:white;
+    padding:30px 15px;
+    border-radius:20px;
+    border-bottom:5px solid #c58a1c;
+    transition:.4s;
+}
+
+.special-card:hover{
+    transform:translateY(-10px);
+    background:#fff8df;
+}
+
+.special-card span{
+    display:block;
+    font-size:2.8rem;
+    margin-bottom:15px;
+}
+
+.special-card h3{
+    color:#7e2055;
+}
+
+/* =========================
+   SECTION 5 CELEBRATION
+========================= */
+
+#celebration{
+    background:linear-gradient(135deg,#74164d,#b93672);
+    color:white;
+}
+
+#celebration .section-title{
+    color:#ffe49d;
+}
+
+#celebration .subtitle{
+    color:#ffeaf4;
+}
+
+.celebrate-grid{
+    width:100%;
+    max-width:1100px;
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+}
+
+.celebrate{
+    padding:35px 20px;
+    border:1px solid rgba(255,255,255,.4);
+    border-radius:25px;
+    background:rgba(255,255,255,.1);
+    transition:.4s;
+}
+
+.celebrate:hover{
+    transform:scale(1.05);
+    background:rgba(255,255,255,.2);
+}
+
+.celebrate .emoji{
+    font-size:4rem;
+    margin-bottom:20px;
+}
+
+.celebrate h3{
+    color:#ffe39a;
+    margin-bottom:12px;
+}
+
+.celebrate p{
+    line-height:1.7;
+}
+
+/* =========================
+   SECTION 6 LETTER
+========================= */
+
+#letter{
+    background:#fff2d8;
+}
+
+.letter-box{
+    max-width:900px;
+    background:#fffdf8;
+    padding:60px;
+    border-left:8px solid #c18b20;
+    box-shadow:0 20px 50px rgba(80,30,40,.2);
+    text-align:left;
+    border-radius:10px;
+}
+
+.letter-box h2{
+    color:#92245c;
+    margin-bottom:25px;
+    font-size:2.3rem;
+}
+
+.letter-box p{
+    font-size:1.15rem;
+    line-height:2;
+    margin-bottom:20px;
+}
+
+.signature{
+    text-align:right;
+    color:#9b3265;
+    font-weight:bold;
+    font-size:1.25rem;
+}
+
+/* =========================
+   SECTION 7 GALLERY
+========================= */
+
+#gallery{
+    background:linear-gradient(135deg,#f5d9eb,#fff0c8);
+}
+
+.gallery{
+    width:100%;
+    max-width:1100px;
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+}
+
+.photo{
+    min-height:230px;
+    border-radius:25px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    overflow:hidden;
+    border:4px solid white;
+    box-shadow:0 15px 30px rgba(80,20,60,.15);
+    transition:.4s;
+    background:linear-gradient(135deg,#ffd889,#f6a8c9);
+}
+
+.photo:nth-child(even){
+    background:linear-gradient(135deg,#d8b4f2,#ffd6a3);
+}
+
+.photo:hover{
+    transform:scale(1.04) rotate(1deg);
+}
+
+.photo img{
+    width:100%;
+    height:100%;
+    min-height:230px;
+    object-fit:cover;
+}
+
+.photo span{
+    background:rgba(255,255,255,.85);
+    padding:12px 18px;
+    border-radius:15px;
+    color:#7a2052;
+}
+
+/* =========================
+   SECTION 8 PROMISE
+========================= */
+
+#promise{
+    background:linear-gradient(135deg,#68164b,#9f2866);
+    color:white;
+}
+
+#promise .section-title{
+    color:#ffe19b;
+}
+
+.promise-box{
+    max-width:850px;
+    padding:60px;
+    border:2px solid #e8bd4c;
+    border-radius:35px;
+    background:rgba(255,255,255,.08);
+}
+
+.big-heart{
+    font-size:6rem;
+    animation:heartbeat 1.5s infinite;
+}
+
+@keyframes heartbeat{
+    50%{transform:scale(1.2)}
+}
+
+.promise-box p{
+    margin-top:25px;
+    font-size:1.35rem;
+    line-height:2;
+}
+
+/* =========================
+   SECTION 9 GIFTS
+========================= */
+
+#gifts{
+    background:#fff5df;
+}
+
+.gift-grid{
+    width:100%;
+    max-width:1000px;
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:25px;
+}
+
+.gift{
+    background:white;
+    padding:40px 20px;
+    border-radius:25px;
+    border:2px solid #e1b449;
+    transition:.4s;
+}
+
+.gift:hover{
+    transform:translateY(-12px) rotate(2deg);
+}
+
+.gift-icon{
+    font-size:4rem;
+    margin-bottom:20px;
+}
+
+.gift h3{
+    color:#8d2359;
+    margin-bottom:10px;
+}
+
+/* =========================
+   SECTION 10 WISHES
+========================= */
+
+#wishes{
+    background:linear-gradient(135deg,#ffe6ef,#ead8f7);
+}
+
+.wishes{
+    width:100%;
+    max-width:1000px;
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:25px;
+}
+
+.wish{
+    background:rgba(255,255,255,.9);
+    padding:35px;
+    border-radius:25px;
+    font-size:1.15rem;
+    line-height:1.8;
+    box-shadow:0 15px 30px rgba(80,20,60,.12);
+    transition:.4s;
+}
+
+.wish:hover{
+    transform:scale(1.04);
+}
+
+/* =========================
+   SECTION 11 SURPRISE
+========================= */
+
+#surprise{
+    background:radial-gradient(circle,#d44c83,#671342);
+    color:white;
+}
+
+#surprise .section-title{
+    color:#ffe29b;
+}
+
+.big-rakhi{
+    width:220px;
+    height:220px;
+    border-radius:50%;
+    background:radial-gradient(circle,#fff1a9,#e7a82e,#a95b10);
+    border:15px solid #ffe4a1;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:7rem;
+    margin-bottom:40px;
+    box-shadow:0 0 0 20px rgba(255,255,255,.1),
+               0 30px 80px rgba(0,0,0,.4);
+    animation:spin 8s linear infinite;
+}
+
+@keyframes spin{
+    from{transform:rotate(0)}
+    to{transform:rotate(360deg)}
+}
+
+.surprise-text{
+    max-width:850px;
+    font-size:1.35rem;
+    line-height:2;
+}
+
+/* =========================
+   SECTION 12 FINAL
+========================= */
+
+#final{
+    background:
+    radial-gradient(circle at 30% 20%,#ffd86b,transparent 20%),
+    radial-gradient(circle at 70% 80%,#ff9bc8,transparent 25%),
+    linear-gradient(135deg,#7c164f,#b8326d);
+    color:white;
+}
+
+#final h1{
+    font-size:clamp(3rem,8vw,7rem);
+    color:#ffe8a5;
+    margin-bottom:30px;
+    text-shadow:3px 5px 15px rgba(0,0,0,.3);
+}
+
+#final p{
+    max-width:800px;
+    font-size:1.5rem;
+    line-height:2;
+}
+
+.final-decor{
+    margin-top:45px;
+    font-size:3rem;
+    letter-spacing:15px;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer{
+    background:#45102f;
+    color:#f9d889;
+    text-align:center;
+    padding:30px 15px;
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media(max-width:900px){
+
+    nav ul{
+        gap:12px;
+    }
+
+    nav a{
+        font-size:.8rem;
+    }
+
+    .cards{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .special-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .celebrate-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .gallery{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .gift-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+}
+
+@media(max-width:600px){
+
+    section{
+        padding:90px 5%;
+    }
+
+    nav{
+        padding:9px 5px;
+    }
+
+    nav ul{
+        gap:7px;
+    }
+
+    nav a{
+        font-size:.68rem;
+    }
+
+    .rakhi{
+        width:140px;
+        height:140px;
+        font-size:4rem;
+    }
+
+    .message-box,
+    .letter-box,
+    .promise-box{
+        padding:30px 20px;
+    }
+
+    .cards,
+    .special-grid,
+    .celebrate-grid,
+    .gallery,
+    .gift-grid,
+    .wishes{
+        grid-template-columns:1fr;
+    }
+
+    .photo{
+        min-height:220px;
+    }
+
+    .photo img{
+        min-height:220px;
+    }
+
+    .big-rakhi{
+        width:170px;
+        height:170px;
+        font-size:5rem;
+    }
+
+    #final p{
+        font-size:1.2rem;
+    }
+
+    .final-decor{
+        font-size:2rem;
+        letter-spacing:7px;
+    }
+}
+
 </style>
 </head>
+
 <body>
-<section>
-<div class="emoji">🪢</div>
-<h1>Happy Raksha Bandhan</h1>
-<h2>My Dear Brother ❤️</h2>
-<p>A thread that binds our hearts forever!</p>
-<a class="btn" href="#invite">Open Invitation 💌</a>
-</section>
-<section id="invite" style="background:white">
-<div class="box">
-<div class="emoji">🎀</div>
-<h2>You Are Invited!</h2>
-<p>On this Raksha Bandhan, I celebrate you - my protector, my friend!</p>
-<p><b>- Your Loving Sister<br>Lehya Pasupuleti 💖</b></p>
+
+<!-- =========================
+     NAVIGATION
+========================= -->
+
+<nav>
+<ul>
+<li><a href="#home">Home</a></li>
+<li><a href="#message">Message</a></li>
+<li><a href="#memories">Memories</a></li>
+<li><a href="#gallery">Gallery</a></li>
+<li><a href="#wishes">Wishes</a></li>
+<li><a href="#final">Final</a></li>
+</ul>
+</nav>
+
+
+<!-- =========================
+     1 HOME
+========================= -->
+
+<section id="home">
+
+<div class="float f1">🌸</div>
+<div class="float f2">✨</div>
+<div class="float f3">❤️</div>
+<div class="float f4">🪔</div>
+
+<div class="rakhi">🪢</div>
+
+<h1>
+Happy Raksha Bandhan
+</h1>
+
+<h2>
+My Dear Brother ❤️
+</h2>
+
+<p>
+A thread that binds our hearts forever!
+</p>
+
+<p>
+A beautiful celebration of the special bond between
+a sister and her brother — filled with love,
+laughter, memories and endless support.
+</p>
+
+<div class="scroll">
+✨ Scroll Down to Begin Our Story ↓ ✨
 </div>
+
 </section>
+
+
+<!-- =========================
+     2 MESSAGE
+========================= -->
+
+<section id="message">
+
+<div class="float f1">🌺</div>
+<div class="float f4">💖</div>
+
+<h2 class="section-title">
+A Special Message <span class="gold">For You</span>
+</h2>
+
+<p class="subtitle">
+Some relationships cannot be explained with words.
+They are simply felt in the heart.
+</p>
+
+<div class="message-box">
+
+<p><strong>Dear Brother,</strong></p>
+
+<p>
+You are not just my brother. You are one of the
+most special people in my life.
+</p>
+
+<p>
+You have always been someone I can trust,
+laugh with and share beautiful memories with.
+</p>
+
+<p>
+On this Raksha Bandhan, I want to thank you
+for every smile, every little moment and
+every time you stood by me.
+</p>
+
+<p>
+May our bond always remain strong,
+happy and beautiful.
+</p>
+
+<p>
+<strong>
+Happy Raksha Bandhan, Dear Brother! ❤️
+</strong>
+</p>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     3 MEMORIES
+========================= -->
+
+<section id="memories">
+
+<h2 class="section-title">
+Our Beautiful Memories
+</h2>
+
+<p class="subtitle">
+Every memory becomes more special when it is shared
+with someone we love.
+</p>
+
+<div class="cards">
+
+<div class="card">
+<div class="icon">😂</div>
+<h3>Fun & Laughter</h3>
+<p>
+All those funny moments, silly conversations
+and endless laughter are memories I will always cherish.
+</p>
+</div>
+
+<div class="card">
+<div class="icon">🤝</div>
+<h3>Always Together</h3>
+<p>
+Through happy days and difficult moments,
+our bond continues to stay strong.
+</p>
+</div>
+
+<div class="card">
+<div class="icon">❤️</div>
+<h3>Family Love</h3>
+<p>
+The love between a brother and sister is
+one of the most beautiful gifts in life.
+</p>
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     4 SPECIAL BROTHER
+========================= -->
+
+<section id="special">
+
+<h2 class="section-title">
+Why You Are Special ❤️
+</h2>
+
+<p class="subtitle">
+A few reasons why I am lucky to have you as my brother.
+</p>
+
+<div class="special-grid">
+
+<div class="special-card">
+<span>🛡️</span>
+<h3>My Protector</h3>
+</div>
+
+<div class="special-card">
+<span>🤗</span>
+<h3>My Support</h3>
+</div>
+
+<div class="special-card">
+<span>😂</span>
+<h3>My Partner in Fun</h3>
+</div>
+
+<div class="special-card">
+<span>🌟</span>
+<h3>My Inspiration</h3>
+</div>
+
+<div class="special-card">
+<span>❤️</span>
+<h3>My Forever Brother</h3>
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     5 CELEBRATION
+========================= -->
+
+<section id="celebration">
+
+<h2 class="section-title">
+Raksha Bandhan Celebration 🪔
+</h2>
+
+<p class="subtitle">
+A festival that celebrates love, protection,
+trust and the beautiful bond of siblings.
+</p>
+
+<div class="celebrate-grid">
+
+<div class="celebrate">
+<div class="emoji">🪢</div>
+<h3>Rakhi</h3>
+<p>
+A sacred thread representing love and protection.
+</p>
+</div>
+
+<div class="celebrate">
+<div class="emoji">🍬</div>
+<h3>Sweets</h3>
+<p>
+Sweet moments made even sweeter with delicious treats.
+</p>
+</div>
+
+<div class="celebrate">
+<div class="emoji">🎁</div>
+<h3>Gifts</h3>
+<p>
+A small gift is a beautiful way to express love.
+</p>
+</div>
+
+<div class="celebrate">
+<div class="emoji">👨‍👩‍👧</div>
+<h3>Family</h3>
+<p>
+The happiness of celebrating together makes the day special.
+</p>
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     6 LETTER
+========================= -->
+
+<section id="letter">
+
+<div class="letter-box">
+
+<h2>
+💌 A Letter From Your Sister
+</h2>
+
+<p>
+Dear Brother,
+</p>
+
+<p>
+Sometimes I may not say it every day,
+but you mean a lot to me.
+</p>
+
+<p>
+Thank you for being there, for making me smile,
+for supporting me and for being an important
+part of my life.
+</p>
+
+<p>
+No matter how much we grow or how busy life becomes,
+I hope our bond will always remain the same.
+</p>
+
+<p>
+I wish you happiness, success, good health
+and everything beautiful in life.
+</p>
+
+<p>
+With lots of love,
+</p>
+
+<p class="signature">
+Your Loving Sister<br>
+Lehya Pasupuleti 💖
+</p>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     7 GALLERY
+========================= -->
+
+<section id="gallery">
+
+<h2 class="section-title">
+Our Photo Gallery 📸
+</h2>
+
+<p class="subtitle">
+Add your favourite brother-sister memories here.
+</p>
+
+<div class="gallery">
+
+<!-- PHOTO 1 -->
+<div class="photo">
+<span>📸 Our Memory 1</span>
+</div>
+
+<!-- PHOTO 2 -->
+<div class="photo">
+<span>📸 Our Memory 2</span>
+</div>
+
+<!-- PHOTO 3 -->
+<div class="photo">
+<span>📸 Our Memory 3</span>
+</div>
+
+<!-- PHOTO 4 -->
+<div class="photo">
+<span>📸 Our Memory 4</span>
+</div>
+
+<!-- PHOTO 5 -->
+<div class="photo">
+<span>📸 Our Memory 5</span>
+</div>
+
+<!-- PHOTO 6 -->
+<div class="photo">
+<span>📸 Our Memory 6</span>
+</div>
+
+<!-- PHOTO 7 -->
+<div class="photo">
+<span>📸 Our Memory 7</span>
+</div>
+
+<!-- PHOTO 8 -->
+<div class="photo">
+<span>📸 Our Memory 8</span>
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     8 PROMISE
+========================= -->
+
+<section id="promise">
+
+<h2 class="section-title">
+A Promise From Your Sister
+</h2>
+
+<div class="promise-box">
+
+<div class="big-heart">
+❤️
+</div>
+
+<p>
+I promise that no matter where life takes us,
+I will always care for you, support you
+and celebrate your happiness.
+</p>
+
+<p>
+Our bond will always have a special place
+in my heart.
+</p>
+
+<p>
+<strong>
+Forever and Always — Brother & Sister ❤️
+</strong>
+</p>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     9 GIFTS
+========================= -->
+
+<section id="gifts">
+
+<h2 class="section-title">
+Little Gifts of Love 🎁
+</h2>
+
+<p class="subtitle">
+The best gifts are not always things.
+Sometimes they are memories, smiles and love.
+</p>
+
+<div class="gift-grid">
+
+<div class="gift">
+<div class="gift-icon">❤️</div>
+<h3>Love</h3>
+<p>A lifetime of love and care.</p>
+</div>
+
+<div class="gift">
+<div class="gift-icon">😊</div>
+<h3>Smiles</h3>
+<p>May your life always be filled with happiness.</p>
+</div>
+
+<div class="gift">
+<div class="gift-icon">🌟</div>
+<h3>Success</h3>
+<p>May all your dreams come true.</p>
+</div>
+
+<div class="gift">
+<div class="gift-icon">🪔</div>
+<h3>Blessings</h3>
+<p>May every step of your journey be beautiful.</p>
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     10 WISHES
+========================= -->
+
+<section id="wishes">
+
+<h2 class="section-title">
+My Wishes For You ✨
+</h2>
+
+<p class="subtitle">
+From my heart, I wish you all the happiness in the world.
+</p>
+
+<div class="wishes">
+
+<div class="wish">
+🌟 May you achieve all your dreams and goals.
+</div>
+
+<div class="wish">
+❤️ May you always stay happy and healthy.
+</div>
+
+<div class="wish">
+😊 May your life be filled with beautiful memories.
+</div>
+
+<div class="wish">
+🌈 May every new day bring you new opportunities.
+</div>
+
+<div class="wish">
+🪔 May you always be surrounded by love and positivity.
+</div>
+
+<div class="wish">
+🎉 May your future be bright, successful and wonderful.
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     11 SURPRISE
+========================= -->
+
+<section id="surprise">
+
+<div class="big-rakhi">
+🪢
+</div>
+
+<h2 class="section-title">
+One Last Special Message ❤️
+</h2>
+
+<p class="surprise-text">
+Dear Brother, you are a beautiful part of my life.
+No matter how many years pass,
+the memories we create and the bond we share
+will always remain special.
+</p>
+
+<p class="surprise-text">
+Thank you for being my brother,
+my protector, my supporter and my friend.
+</p>
+
+</section>
+
+
+<!-- =========================
+     12 FINAL
+========================= -->
+
+<section id="final">
+
+<div class="float f1">🌸</div>
+<div class="float f2">✨</div>
+<div class="float f3">❤️</div>
+<div class="float f4">🪔</div>
+
+<h1>
+Happy Raksha Bandhan
+</h1>
+
+<p>
+To my dear brother,
+may our bond become stronger with every passing year.
+</p>
+
+<p>
+You will always have a special place in my heart. ❤️
+</p>
+
+<div class="final-decor">
+🌸 🪢 ❤️ 🪔 ✨
+</div>
+
+<h2 style="margin-top:40px;color:#ffe49d;">
+With Lots of Love,
+<br>
+Your Loving Sister
+<br>
+Lehya Pasupuleti 💖
+</h2>
+
+</section>
+
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer>
+❤️ Made with Love for My Dear Brother ❤️
+<br><br>
+Happy Raksha Bandhan 🪢
+</footer>
+
 </body>
 </html>
